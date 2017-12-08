@@ -14,21 +14,21 @@
     "localAdminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/7f8e3a79-1ae6-4879-b3f7-e53abbe70238/resourceGroups/CMSCompassProd-Cy2/providers/Microsoft.KeyVault/vaults/CMSCompassCerts"
+          "id": "enter id here"
         },
         "secretName": "CompassLoginCreds"
       }
     },
     "servicePrincipalApplicationId": {
-      "value": "ab3dc5d0-ee2f-4b37-99f4-51a103120c5e"
+      "value": "GUID here"
     },
     "servicePrincipalTenantId": {
-      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47" 
+      "value": "GUID here" 
     },
     "servicePrincipalKey": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/7f8e3a79-1ae6-4879-b3f7-e53abbe70238/resourceGroups/CMSCompassProd-Cy2/providers/Microsoft.KeyVault/vaults/CMSCompassCerts"
+          "id": "enter id here"
         },
         "secretName": "Compass-KeyVaultPrincipal"
       }
