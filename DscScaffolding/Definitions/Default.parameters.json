@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "instanceCount": {
+      "value": 1
+    },
+    "vmSku": {
+      "value": "Standard_D2_v2"
+    },
+    "localAdminUserName": {
+      "value": "compassrt"
+    },
+    "localAdminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/7f8e3a79-1ae6-4879-b3f7-e53abbe70238/resourceGroups/CMSCompassProd-Cy2/providers/Microsoft.KeyVault/vaults/CMSCompassCerts"
+        },
+        "secretName": "CompassLoginCreds"
+      }
+    },
+    "servicePrincipalApplicationId": {
+      "value": "ab3dc5d0-ee2f-4b37-99f4-51a103120c5e"
+    },
+    "servicePrincipalTenantId": {
+      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47" 
+    },
+    "servicePrincipalKey": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/7f8e3a79-1ae6-4879-b3f7-e53abbe70238/resourceGroups/CMSCompassProd-Cy2/providers/Microsoft.KeyVault/vaults/CMSCompassCerts"
+        },
+        "secretName": "Compass-KeyVaultPrincipal"
+      }
+    }
+  }
+}
